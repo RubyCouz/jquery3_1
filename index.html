@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <title>Exercice 1</title>
+  </head>
+  <body>
+    <div>
+      <input readonly="readonly" id="clickNumber"></input>
+      <button id="clickMe">click me!</button>
+    </div>
+    <script>
+    var click = 1;
+    $('#clickMe').click(function() {
+      $('#clickNumber').val(click++);
+    });
+    </script>
+  </body>
+</html>
